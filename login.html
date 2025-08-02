@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-gray-100">
+  <div class="flex justify-center">
+    <div class=" w-[500px] mt-[6%] mr-4 rounded-lg pb-8 shadow-2xl bg-white ">
+      <div class="border w-14 h-14 text-center pt-2 rounded-4xl mb-4 bg-gray-200 ml-[210px] mt-5">
+        <i  class="fa-solid fa-user-plus border w-9 h-9 text-center pt-2 rounded-3xl bg-white"></i>
+      </div>
+      <div class="text-center">
+        <h1 class="font-semibold text-3xl mb-2">Login to your account</h1>
+        <p class="mb-6">Enter your details to login</p>
+      </div>
+      <label class="ml-5 font-medium">Email</label>
+      <input id="loginEmail" class="block ml-5 border w-md h-13 mt-1 mb-3 rounded-lg"  type="email" placeholder="  Ex:Johndoe@financial.com">
+      <div class="relative top-0">
+        <label class="ml-5 font-medium">Password</label>
+        <input id="emailPass" class="block ml-5 border w-md h-13 mt-1 mb-3 rounded-lg"  type="password" placeholder="  Enter Your Password">
+        <i class="fa-regular fa-eye absolute right-12 top-11"></i>
+      </div>
+      <div class="flex justify-between">
+        <label class="ml-5 text-gray-600"><input id="loginCheck" onchange="filled()" class="mr-2 cursor-pointer" type="checkbox">Remember me</label>
+        <a href="#" class="mr-8 underline">Forgot Password?</a>
+      </div>
+      <button id="active" onclick="authentication()" class="border w-md ml-5 mt-5 h-13 bg-gray-500 rounded-lg text-white cursor-pointer ">Sign In</button>
+    </div>
+</div>
+</body>
+</html>

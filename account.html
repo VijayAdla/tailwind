@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-gray-100">
+    <div class="ml-[35%] mt-10">
+        <a href="./login.html"><button class="border w-[120px] h-8 border-black rounded-2xl mt-3 relative"><img class="absolute top-2 left-3" src="./image1.png" width="16px">1.Email</button></a> >
+        <button class="border w-[150px] h-8 border-black rounded-2xl mt-3 relative pl-4"><img class="absolute top-1.5 left-1 rounded-2xl" src="./image.png" width="18px">2.Account Type</button>  >
+        <button class="border w-[150px] h-8 border-gray-400 rounded-2xl mt-3 relative"><img class="absolute top-1.5 left-2 rounded-2xl" src="./image copy.png" width="18px">3.Country</button>
+    </div>
+  <div class="flex justify-center mt-[-20px]">
+    <div class=" w-[500px] mt-[6%] mr-4 rounded-lg pb-8 shadow-2xl bg-white ">
+      <div class="w-14 h-13 text-center pt-2 rounded-4xl mb-4 bg-gray-200 ml-[210px] mt-5">
+        <i  class="fa-solid fa-user-plus w-9 h-9 text-center pt-2 rounded-3xl bg-white"></i>
+      </div>
+      <div class="text-center">
+        <h1 class="font-semibold text-2xl mb-2">What Kind of account<br> would you open today?</h1>
+        <p class="mb-6 text-gray-500">You can add another account later on,too</p>
+      </div>
+      <div id="personal" class="border flex w-md ml-7 pt-2 pb-2 rounded-2xl pl-2 border-gray-300">
+        <div class="w-11 h-11 text-center rounded-4xl bg-gray-300 mt-3 mb-2">
+            <i class="fas fa-user mt-1 w-9 h-9 text-center pt-2 rounded-3xl bg-white""></i>
+        </div>
+        <div>
+            <label class="text-xl font-bold ml-2">personal<input id="personalInput" onchange="personalAccount()" class="ml-70 mt-3 bg-red" type="checkbox"></label>
+            <p class="ml-2 text-gray-500">Send,spend and receive around the world for less</p>
+        </div>
+      </div>
+      <div id="business" class="border flex w-md ml-7 pt-2 pb-2 rounded-2xl pl-2 border-gray-300 mt-3">
+        <div class="w-11 h-11 text-center rounded-4xl bg-gray-300 mt-3 mb-2">
+            <i class="fa-solid fa-briefcase mt-1 w-9 h-9 text-center pt-2 rounded-3xl bg-white"></i>
+        </div>
+        <div>
+            <label class="text-xl font-bold ml-2">Business<input id="businessInput" onchange="businessAccount()" class="ml-70 mt-3 checked:bg-black" type="checkbox"></label>
+            <p class="ml-2 text-gray-500">Do business or freelance work internationally</p>
+        </div>
+      </div>
+      <a href="./country.html"><button id="active" class="border w-md ml-5 mt-5 h-13 bg-black rounded-xl text-white cursor-pointer text-lg ">Continue</button></a>
+    </div>
+</div>
+</body>
+</html>
